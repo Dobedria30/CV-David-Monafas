@@ -18,8 +18,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  background-color: bisque;
-  border-radius: 20px;
+  background-color: #ffe8cc;
+  border-radius: 0 0 20px 20px;
   gap: 40px;
 }
 
@@ -31,6 +31,55 @@ section {
 a {
   color: #530546a4;
   text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+  background-color: #ffe8cc;
+}
+
+img {
+  height: 180px;
+  border-radius: 20px;
+}
+
+.gradient-background {
+  background: linear-gradient(133deg,#ffe4c4,#94c6fc,#370a78);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  margin: 25px;
+  justify-content: center;
+  text-align: center;
+}
+
+.one, .three {
+  border-radius: 50px 0 50px 50px;
+}
+.two {
+  border-radius: 0 50px 50px 50px;
+}
+
+footer {
+
 }
 
 
