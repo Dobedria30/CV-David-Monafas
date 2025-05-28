@@ -28,9 +28,14 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
-a {
-  color: #530546a4;
+a:visited, a:link {
+  color: #530546;
   text-decoration: none;
+  transition: all 1s ease;
+}
+
+.encale:hover {
+  color: rgb(15, 3, 3);
 }
 
 section {
