@@ -13,6 +13,16 @@ nav {
   align-items: center;
   padding: 20px;
 }
+ a:link {
+  color: #370a78;
+  text-decoration: none;
+  padding: 10px;
+ }
+nav a:hover {
+  background-color: #ffe4c4;
+  transition: background-color 1s ease;
+  border-radius: 35px;
+}
 
 main {
   display: flex;
@@ -23,19 +33,14 @@ main {
   gap: 40px;
 }
 
-section {
+section:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-a:visited, a:link {
-  color: #530546;
-  text-decoration: none;
-  transition: all 1s ease;
-}
-
-.encale:hover {
-  color: rgb(15, 3, 3);
+section:hover {
+  background-color: #054c52bb;
+  transition: background-color 1s ease;
 }
 
 section {
